@@ -1,16 +1,16 @@
 {
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:34775"
+    "BaseUrl": "http://salon.bantb.org.tr"
   },
   "ReRoutes": [
     {
-      "UpstreamPathTemplate": "/CustomerService/{catchAll}",
-      "DownstreamPathTemplate": "/api/{catchAll}",
+      "UpstreamPathTemplate": "{catchAll}",
+      "DownstreamPathTemplate": "{catchAll}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 35045
+          "Host": "192.169.0.18",
+          "Port": 8088
         }
       ],
       "LoadBalancerOptions": {
